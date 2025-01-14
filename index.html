@@ -1,0 +1,829 @@
+<!doctype html>
+<html class="no-js" lang="" class="">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <title>Scott Griffin</title>
+  <meta name="description" content="Scott Griffin is a website programmer from Iowa City, Iowa.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="Scott Griffin">
+  <meta property="og:type" content="Website">
+  <meta property="og:image" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=587719" />
+  <script src="https://kit.fontawesome.com/a6047c30c0.js" crossorigin="anonymous"></script>
+  <link rel="preload" href="https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/wtr.gif?v=1733977237179" as="image">
+  <link rel="preload" href="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/disagree.gif?v=1733977088648" as="image">
+  <link rel="preload" href="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/mc_paper.gif?v=1733977492130" as="image">
+  <link rel="preload" href="https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/arima_algo.gif?v=1733977064129" as="image">
+  <link rel="preload" href="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/asset_portfolio.gif?v=1733977075783" as="image">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <div id="falling-icons-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10000;"></div>
+  <div class="menucustom pe-md ps-md">
+    <ul>
+      <li>
+        <a href="#intro">Scott Griffin</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="menumobile">
+    <a href="#intro" class="currentpage">Scott Griffin</a> <a href="#" class="openmenu"><img
+        src="" /></a><a href="#" class="closemenu"><img
+        src="" /></a>
+    <div class="more">
+      <ul>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="fixloading"></div>
+  <div class="loadingbar">
+    <div class="progress"></div>
+  </div>
+  <div class="loaderproject">
+  </div>
+  <div class="container-site">
+    <section class="panel intro" id="intro">
+      <div class="memoji-container">
+        <img class="memoji" src="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/memoji.png?v=1736227538528" alt="Memoji of Scott Griffin" />
+      </div>
+      <div class="position">
+        <div class="left d-flex">
+          <div class="d-flex flex-column align-self-end">
+            <h2 class="titleText pt-1xl pb-xl">Hi, I'm Scott.</h2>
+          </div>
+        </div>
+        <div class="imageintro">
+          <div id="chat-container-container">
+            <div id="chat-container">
+              <div id="chat-messages">
+                <div class="message ai">
+                  I'm an AI assistant who can tell you about Scott, a 25 y/o full-stack developer with financial industry experience. What would you
+                  like to know?
+                </div>
+              </div>
+              <div id="input-area">
+                <div id="suggested-questions"></div>
+                <div id="input-container">
+                  <input type="text" id="user-input" placeholder="Type your message..." />
+                  <button id="sendMessageButton" onclick="sendMessage()">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel projects grey d-flex flex-column align-items-start" id="projects">
+      <div class="decostart"></div>
+      <h2 class="pt-3xl pb-xl">Projects</h2> 
+      
+      <div class="accordion-projects mt-xl d-none d-md-block">
+        <div class="item">
+          <span></span>
+          <h3>whattheradio.io</h3>
+          <a href="https://whattheradio.io"></a>
+        </div>
+        <div class="info">
+          <a href="https://whattheradio.io">
+            <div class="thumbnail"
+              style="background-image: url(https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/wtr.gif?v=1733977237179);">
+            </div>
+          </a>
+          <a href="https://whattheradio.io">free internet radio stations for everyone [nodejs, aws, stripe, msql]</a>
+        </div>
+
+        <div class="item">
+          <span></span>
+          <h3>Monte Carlo Option Pricing on Slurm Clusters</h3>
+          <a href="https://github.com/scottgriffinm/Monte-Carlo-Option-Pricing-on-a-SLURM-Cluster"></a>
+        </div>
+        <div class="info">
+          <a href="https://github.com/scottgriffinm/Monte-Carlo-Option-Pricing-on-a-SLURM-Cluster">
+            <div class="thumbnail"
+              style="background-image: url(https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/mc_paper.gif?v=1733977492130);">
+            </div>
+          </a>
+          <a href="https://github.com/scottgriffinm/Monte-Carlo-Option-Pricing-on-a-SLURM-Cluster">guide to pricing monte carlo options on slurm clusters [python, slurm]</a>
+        </div>
+
+        <div class="item">
+          <span></span>
+          <h3>Asset Portfolio Optimization and Forecasting</h3>
+          <a href="https://optimize-and-forecast-asset-portfolios.glitch.me"></a>
+        </div>
+        <div class="info">
+          <a href="https://optimize-and-forecast-asset-portfolios.glitch.me">
+            <div class="thumbnail"
+              style="background-image: url(https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/asset_portfolio.gif?v=1733977075783);">
+            </div>
+          </a>
+          <a href="https://optimize-and-forecast-asset-portfolios.glitch.me">free tool for optimizing and simulating asset portfolios [javascript, monte-carlo simulation]</a>
+        </div>
+
+        <div class="item">
+          <span></span>
+          <h3>disagree.me</h3>
+          <a href="https://disagree.glitch.me"></a>
+        </div>
+        <div class="info">
+          <a href="https://disagree.glitch.me">
+            <div class="thumbnail"
+              style="background-image: url(https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/disagree.gif?v=1733977088648);">
+            </div>
+          </a>
+          <a href="https://disagree.glitch.me">understanding perspectives through disagreement [nodejs, socket.io, webrtc]</a>
+        </div>
+
+       
+
+        <div class="item">
+          <span></span>
+          <h3>ARIMA Algorithmic Equity Trading Model</h3>
+          <a href="https://colab.research.google.com/drive/1dZXOnU_EyARn5pGA7OVzqkF20zH7snPa?usp=sharing"></a>
+        </div>
+        <div class="info">
+          <a href="https://colab.research.google.com/drive/1dZXOnU_EyARn5pGA7OVzqkF20zH7snPa?usp=sharing">
+            <div class="thumbnail"
+              style="background-image: url(https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/arima_algo.gif?v=1733977064129);">
+            </div>
+          </a>
+          <a href="https://colab.research.google.com/drive/1dZXOnU_EyARn5pGA7OVzqkF20zH7snPa?usp=sharing">implementation and optimization of arima-based algorithmic trading model [python]</a>
+        </div>
+
+       
+
+      </div>
+
+      <div class="mobile-projects d-md-none">
+      <div class="listing pt-sm">
+          <span>free internet radio stations for everyone [nodejs, aws, stripe, mysql] (Aug. 2024)</span>
+          <h3 class="mb-sm pt-xs">whattheradio.io</h3>
+          <a href="https://whattheradio.io">
+            <img src="https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/wtr.gif?v=1733977237179" alt=""
+              class="mb-lg"><br />
+          </a>
+        </div>
+
+        <div class="listing pt-sm">
+          <span>guide to pricing monte carlo options on slurm clusters [python, slurm, monte-carlo simulation] (Jan. 2024)</span>
+          <h3 class="mb-sm pt-xs">Monte Carlo Option Pricing on Slurm Clusters</h3>
+          <a href="https://github.com/scottgriffinm/Monte-Carlo-Option-Pricing-on-a-SLURM-Cluster">
+            <img src="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/mc_paper.gif?v=1733977492130" alt=""
+              class="mb-lg"><br />
+          </a>
+        </div>
+
+        <div class="listing pt-sm">
+          <span>free tool for optimizing and simulating asset porfolios [javascript, monte-carlo simulation] (Sep. 2023)</span>
+          <h3 class="mb-sm pt-xs">Asset Portfolio Optimization and Forecasting</h3>
+          <a href="https://optimize-and-forecast-asset-portfolios.glitch.me">
+            <img src="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/asset_portfolio.gif?v=1733977075783" alt=""
+              class="mb-lg"><br />
+          </a>
+        </div>
+    
+        <div class="listing pt-sm">
+          <span>understanding perspectives through disagreement [nodejs, socket.io, webrtc] (Sep. 2024)</span>
+          <h3 class="mb-sm pt-xs">disagree.me</h3>
+          <a href="https://disagree.glitch.me">
+            <img src="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/disagree.gif?v=1733977088648" alt=""
+              class="mb-lg"><br />
+          </a>
+        </div>
+
+        
+       
+        
+        <div class="listing pt-sm">
+          <span>implementation and optimization of arima-based algorithmic trading model [python, arima modeling] (Nov. 2024)</span>
+          <h3 class="mb-sm pt-xs">ARIMA Algorithmic Equity Trading Model</h3>
+          <a href="https://colab.research.google.com/drive/1dZXOnU_EyARn5pGA7OVzqkF20zH7snPa?usp=sharing">
+            <img src="https://cdn.glitch.me/52e967b3-6499-41f2-ab4d-de4fa1ac6293/arima_algo.gif?v=1733977064129" alt=""
+              class="mb-lg"><br />
+          </a>
+        </div>
+    
+      </div>
+    </section>
+    <section class="panel studio grey" id="about">
+      <div class="decomiddle"></div>
+      <div class="content">
+        <h2 class="pt-3xl pb-xl">About</h2>
+        <div class="content">
+          <div class="columns space mt-2">
+            <p>
+              I like programming, finance, and music!
+            </br>
+            </br>
+            My education:
+            </br>
+
+            * M.S. Finance, University of Iowa (2022)
+            </br>
+
+            * M.S. Business Analytics, University of Iowa (2022)
+            </br>
+
+            * B.B.A. Finance, University of Iowa (2018)
+
+            </br>
+            </br>
+         
+            I'm excited to use what I've learned in my education and project experience to solve problems at a great
+            company.
+          </p>
+          </div>
+          <div class="columns space mt-2">
+            <img id="resume" src="https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/ScottGriffinResume.pdf?v=1734982477673">
+          </div>
+          <div class="columns immagine mt-2">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel end black p-md" id="contact">
+      <div class="decoend"></div>
+      <div class="column">
+        <div class="content d-flex align-items-stretch flex-column">
+          <div class="top">
+            <p id="contactHeader">Contact</p>
+          </div>
+          <div class="top">
+            <p><a href="mailto:scottgriffinm@gmail.com">email</a></p>
+          </div>
+          <div class="top">
+            <p><a href="https://www.linkedin.com/in/scottgriffinm/">linkedin</a></p>
+          </div>
+          <div class="column half">
+            <div class="content d-flex align-items-stretch flex-column">
+              <div class="top">
+                <p><a href="https://github.com/scottgriffinm">github</a></p>
+              </div>
+              <div class="bottom d-none d-md-flex">
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="column half">
+            <div class="content d-md-flex align-items-stretch flex-column">
+              <div class="bottom">
+                <p><a href="https://huggingface.co/smgriffin">huggingface</a></p>
+              </div>
+              <div class="bottom" style="margin-bottom:40px;">
+                <p><a href="https://glitch.com/@scottgriffinm">glitch</a></p>
+              </div>
+              <div class="bottom logo pe-md d-md-none rightsreserved">
+             
+              </div>
+              <div class="bottom fx d-md-none">
+
+              </div>
+            </div>
+          </div>
+    </section>
+  </div>
+  <style>
+    html {
+      overflow-y: scroll;
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
+    }
+
+    body {
+      overflow-y: visible;
+      position: relative;
+      height: unset;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      margin: 0;
+    }
+  </style>
+
+
+  <script src="assets/vendor/jquery-3.5.1.min.js"></script>
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/jquery.fittext.js"></script>
+  <script src="assets/js/scriptforpage.js?v=3762"></script>
+
+  <script>
+    
+      const allQuestions = [
+        "What are his goals?",
+        "What's his current employment?",
+        "What are his best technical skills?",
+        "What leadership experience does he have?",
+        "What value did he add during his internships?",
+        "How do his personal projects demonstrate creativity?",
+        "How has he used machine learning?",
+        "How has he applied financial knowledge to his projects?",
+        "What backend systems and processes has he built?",
+        "What programming languages does he know?",
+        "What did he learn in his masters program?",
+        "What database systems has he worked with?",
+      ];
+    
+    let availableQuestions = [...allQuestions];
+    let currentButtons = new Set();
+
+    function createTypingIndicator() {
+      const indicator = document.createElement("div");
+      indicator.className = "typing-indicator";
+      for (let i = 0; i < 3; i++) {
+        const dot = document.createElement("div");
+        dot.className = "typing-dot";
+        indicator.appendChild(dot);
+      }
+      return indicator;
+    }
+
+    function showTypingIndicator() {
+      const messagesDiv = document.getElementById("chat-messages");
+      const indicator = createTypingIndicator();
+      messagesDiv.appendChild(indicator);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+      return indicator;
+    }
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function replaceQuestion(button) {
+      if (availableQuestions.length < 1) {
+        availableQuestions = [...allQuestions];
+        shuffle(availableQuestions);
+      }
+
+      let newQuestion;
+      do {
+        newQuestion = availableQuestions.shift();
+      } while (
+        currentButtons.has(newQuestion) &&
+        availableQuestions.length > 0
+      );
+
+      button.textContent = newQuestion;
+      currentButtons.add(newQuestion);
+    }
+
+    function updateSuggestedQuestions() {
+      const container = document.getElementById("suggested-questions");
+      container.innerHTML = "";
+      currentButtons.clear();
+
+      for (let i = 0; i < 3; i++) {
+        const button = document.createElement("button");
+        button.className = "suggestion";
+        const question = availableQuestions[i];
+        button.textContent = question;
+        currentButtons.add(question);
+
+        button.onclick = () => {
+          const input = document.getElementById("user-input");
+          const selectedQuestion = button.textContent; // Preserve the clicked question
+          input.value = selectedQuestion;
+          sendMessage();
+          setTimeout(() => replaceQuestion(button), 0); // Replace after sending
+        };
+
+        container.appendChild(button);
+      }
+    }
+
+    function removeInputArea() {
+      const inputArea = document.getElementById("input-area");
+
+      // Disable all suggestion buttons
+      const suggestionButtons = document.querySelectorAll(".suggestion");
+      suggestionButtons.forEach((button) => {
+        button.disabled = true;
+        button.style.cursor = "not-allowed";
+        button.style.opacity = "0.5";
+      });
+
+      // Fade out the input area
+      inputArea.classList.add("fade-out");
+      setTimeout(() => {
+        inputArea.remove();
+      }, 500);
+    }
+
+    function addMessage(text, isUser) {
+      const messagesDiv = document.getElementById("chat-messages");
+      const messageDiv = document.createElement("div");
+      messageDiv.className = `message ${isUser ? "user" : "ai"}`;
+      messageDiv.textContent = text;
+      messagesDiv.appendChild(messageDiv);
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+
+    function sendMessage() {
+      const input = document.getElementById("user-input");
+      const message = input.value.trim();
+
+      if (message) {
+        addMessage(message, true);
+        const typingIndicator = showTypingIndicator();
+
+        fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt: message }),
+        })
+          .then(async (response) => {
+            typingIndicator.remove();
+            if (response.status === 429) {
+              removeInputArea();
+              addMessage(
+                "I've enjoyed our conversation! If you'd like to get in touch with Scott directly, you can reach him at scottgriffinm@gmail.com.",
+                false
+              );
+            } else if (response.ok) {
+              const data = await response.json();
+              addMessage(data.text, false);
+              if (data.lastPrompt) {
+                removeInputArea();
+                addMessage(
+                  "I've enjoyed our conversation! If you'd like to get in touch with Scott directly, you can reach him at scottgriffinm@gmail.com.",
+                  false
+                );
+              }
+            } else {
+              addMessage(
+                "Something went wrong. Please try again later.",
+                false
+              );
+            }
+          })
+          .catch(() => {
+            typingIndicator.remove();
+            addMessage(
+              "Failed to connect to the server. Please try again later.",
+              false
+            );
+          });
+
+        input.value = "";
+      }
+    }
+
+    shuffle(availableQuestions);
+    updateSuggestedQuestions();
+
+    document
+      .getElementById("user-input")
+      .addEventListener("keypress", function (e) {
+        if (e.key === "Enter") sendMessage();
+      });
+  </script>
+
+<script>
+  // Preload images
+  const iconUrls = [
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/aws.png?v=1736226057793",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/chart%20up.png?v=1736226060318",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/docker.png?v=1736226062141",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/java.png?v=1736226064629",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/js.png?v=1736226066716",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/node.png?v=1736226068886",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/pyomo.png?v=1736226071218",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/python.png?v=1736226073401",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/pytorch.png?v=1736226075763",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/react.png?v=1736226077940",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/slurm.png?v=1736226080674",
+    "https://cdn.glitch.global/52e967b3-6499-41f2-ab4d-de4fa1ac6293/tensorflow.png?v=1736226083241",
+  ];
+
+  const preloadedIcons = [];
+
+  // Function to preload images
+  function preloadIcons() {
+    iconUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+      preloadedIcons.push(img);
+    });
+    console.log("Images preloaded:", preloadedIcons);
+  }
+
+  window.addEventListener("load", preloadIcons);
+
+  // Function to generate random icons and make them fall
+  function rainIcons() {
+  const iconsContainer = document.getElementById("falling-icons-container");
+  const totalIcons = 10;
+  const guaranteedIcons = [...preloadedIcons];
+ 
+  function createAndAnimateIcon(iconSrc, delay) {
+    setTimeout(() => {
+      const icon = document.createElement("img");
+      icon.src = iconSrc;
+      icon.className = "falling-icon";
+
+      // Random starting position
+      icon.style.left = Math.random() * 90 + "vw";
+      icon.style.top = "-15vh";
+
+       // Random rotation direction: 360deg for right or -360deg for left
+       const rotationDirection = Math.random() > 0.5 ? "360deg" : "-360deg";
+      icon.style.setProperty("--rotation-direction", rotationDirection);
+
+
+      // Random speed
+      const fallDuration = Math.random() * 1.5 + 1.5;
+      icon.style.animationDuration = `${fallDuration}s`;
+
+      // Add icon to the container
+      iconsContainer.appendChild(icon);
+
+      // Remove icon after animation ends
+      icon.addEventListener("animationend", () => {
+        icon.remove();
+      });
+    }, delay);
+  }
+
+  // Ensure one of each icon
+  guaranteedIcons.forEach((icon) => {
+    const delay = Math.random() * 1200;
+    createAndAnimateIcon(icon.src, delay);
+  });
+
+  // Add random icons
+  for (let i = guaranteedIcons.length; i < totalIcons; i++) {
+    const randomIndex = Math.floor(Math.random() * preloadedIcons.length);
+    const randomIcon = preloadedIcons[randomIndex].src;
+    const delay = Math.random() * 1000;
+    createAndAnimateIcon(randomIcon, delay);
+  }
+}
+
+  // Click event listener for memoji to rain icons and pinch/reset
+  const memoji = document.querySelector(".memoji");
+  memoji.addEventListener("click", () => {
+    rainIcons();
+    gsap.timeline()
+      .to(memoji, { scale: 0.9, duration: 0.2, ease: "power1.out" }) // Shrink slightly
+      .to(memoji, { scale: 1, duration: 0.4, ease: "power1.out" }); // Bounce back smoothly
+  });
+</script>
+
+
+  <script>
+    window.scrollTo(0, 0);
+    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+    var durationTime = 1;
+    var durationTimeFast = .6;
+    if (window.location.hash != "") {
+      var durationTime = 0;
+      var durationTimeFast = 0;
+    }
+
+    gsap.to('.loadingbar .progress', {
+      xPercet: 100,
+      duration: 1
+    });
+
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1024px)", () => {
+      let textIntro = gsap.utils.toArray(".panel.intro img");
+      gsap.set(textIntro, {
+        yPercent: 100
+      });
+      gsap.set('.menucustom', {
+        yPercent: -100
+      });
+      gsap.to(textIntro, {
+        yPercent: 0,
+        duration: durationTime,
+      });
+      gsap.to('.loadingbar .progress', {
+        xPercent: 100,
+        duration: durationTime,
+        onComplete: () => {
+
+          gsap.to('.loadingbar', {
+            autoAlpha: 0,
+            duration: durationTimeFast
+          });
+          gsap.to('.menucustom', {
+            yPercent: 0,
+            duration: durationTimeFast
+          });
+          gsap.to('.panel.intro .position > div', {
+            width: "50%",
+            duration: durationTimeFast
+          });
+          gsap.to('.panel.intro .position .imageintro', {
+            x: "-99.5%",
+            duration: durationTimeFast,
+            onComplete: () => {
+              let sections = gsap.utils.toArray(".panel");
+              let scrollContainer = document.querySelector(".container-site");
+
+              if (window.location.hash != "") {
+                const id = window.location.hash.split('#')[1];
+                const targetElement = document.getElementById(id)
+                const navBar = document.querySelector('.menucustom')
+                const scrollToHere = targetElement.offsetLeft * (scrollContainer.scrollWidth / (scrollContainer.scrollWidth - window.innerWidth))
+                console.log(scrollToHere)
+
+                gsap.to(window, {
+                  scrollTo: scrollToHere,
+                  duration: 0.1,
+                  delay: 0.1
+                })
+                var lastProject = "";
+                console.log(lastProject);
+                if (lastProject != "") {
+                  $(this).data('timeout', setTimeout(function () {
+                    $('.' + lastProject).trigger('mouseenter');
+                  }, 500));
+                }
+
+              }
+            }
+          });
+        }
+      });
+
+      let sections = gsap.utils.toArray(".panel");
+      let scrollContainer = document.querySelector(".container-site");
+
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".container-site",
+          pin: true,
+          scrub: 1,
+          end: () => "+=" + document.querySelector(".container-site").offsetWidth
+        }
+      });
+
+      sections.forEach((section, i) => {
+        if (i == 0) {
+          let timeline1 = gsap.timeline({
+            scrollTrigger: {
+              start: section.offsetLeft,
+              end: `+=${section.offsetWidth}`,
+              scrub: 1,
+            }
+          })
+          $(window).on('resize', function () {
+            timeline1.scrollTrigger.refresh();
+          });
+          timeline1.to('.decostart', {
+            xPercent: -100,
+          })
+        }
+        if (i == 1) {
+          let timeline2 = gsap.timeline({
+            scrollTrigger: {
+              start: section.offsetLeft,
+              end: `+=${section.offsetWidth}`,
+              scrub: 1,
+            }
+          })
+          timeline2.to('.decomiddle', {
+            xPercent: -100,
+          })
+        }
+        if (i == 3) {
+          let timeline3 = gsap.timeline({
+            scrollTrigger: {
+              start: section.offsetLeft,
+              end: `+=${section.offsetWidth / 2.5}`,
+              scrub: 1,
+            }
+          })
+          timeline3.to('.decoend', {
+            xPercent: -100,
+          })
+        }
+      });
+
+      $(window).on('resize', function () {
+      });
+
+      document.querySelectorAll(".menucustom a").forEach(element => {
+
+        element.addEventListener('click', function (e) {
+          e.preventDefault();
+          const id = this.getAttribute('href').split('#')[1];
+          const targetElement = document.getElementById(id)
+          const navBar = document.querySelector('.menucustom')
+          const scrollToHere = targetElement.offsetLeft * (scrollContainer.scrollWidth / (scrollContainer.scrollWidth - window.innerWidth))
+          console.log(scrollToHere)
+
+          gsap.to(window, {
+            scrollTo: scrollToHere,
+            duration: 0.1
+          })
+
+        });
+
+      });
+
+      return () => {
+      };
+    });
+
+    mm.add("(max-width: 1023px)", () => {
+
+      let textIntro = gsap.utils.toArray(".panel.intro img");
+      gsap.set(textIntro, {
+        yPercent: 100
+      });
+      gsap.set('.menucustom', {
+        yPercent: -100
+      });
+      gsap.set('.menumobile', {
+        autoAlpha: 0
+      });
+      gsap.set('.panel.intro .position .imageintro', {
+        x: "100%"
+      });
+
+      gsap.to(textIntro, {
+        yPercent: 0,
+        duration: durationTime,
+      });
+      gsap.to('.loadingbar .progress', {
+        xPercent: 100,
+        duration: durationTime,
+        onComplete: () => {
+
+          gsap.to('.loadingbar', {
+            autoAlpha: 0,
+            duration: durationTimeFast
+          });
+          gsap.to('.menucustom', {
+            yPercent: 0,
+            duration: durationTimeFast,
+            onComplete: () => {
+              gsap.set('.menumobile', {
+                autoAlpha: 1
+              });
+            }
+          });
+          gsap.to('.panel.intro .position > div', {
+            height: "50%",
+            duration: durationTimeFast
+          });
+          gsap.to('.panel.intro .position .imageintro', {
+            x: "0%",
+            duration: durationTimeFast
+          });
+        }
+      });
+      return () => {
+      };
+    });
+  </script>
+</body>
+
+</html>
